@@ -23,7 +23,7 @@ class ParserService:
         return int(page_count)
 
     async def parse_offer_data(self, session, page_count: int, main_url: str) -> None:
-        for page in range(1, 3):  # page_count
+        for page in range(1, page_count):
             page_response = await send_request(
                 url=f"{main_url}?{page=}"
             )
