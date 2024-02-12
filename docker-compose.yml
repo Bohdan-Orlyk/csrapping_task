@@ -10,7 +10,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  your_app:
+  scrapp_app:
     build: .
     depends_on:
       - postgres
@@ -18,4 +18,4 @@ services:
       - .env
     volumes:
       - ./app_dir:/app
-    command: python main.py
+    command: python dump_runner.py
