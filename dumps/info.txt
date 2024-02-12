@@ -1,0 +1,5 @@
+Example name of backup is:
+
+db_backup_{timestamp}.dump
+
+where {timestamp} is datetime.datetime.now().strftime("%Y%m%d%H%M%S")
