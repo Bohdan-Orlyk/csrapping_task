@@ -32,8 +32,17 @@ This is a simple application that parses a website, stores the data in a Postgre
    ### The application will now start parsing the website daily at 12:00 and perform a database dump at 12:30.
 
 ## Configuration
-- Update the .env file with the appropriate configurations for your application. 
+- Update the .env file with the appropriate configurations for your application.
 - Adjust the schedule for parsing and database dump in the docker-compose.yml file under the cron service.
+
+## Example of .env structure
+```
+user = str
+password = str
+database = str
+host = str
+port = int
+```
 
 ## Monitoring 
 - ```bash 
